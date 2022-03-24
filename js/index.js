@@ -88,10 +88,7 @@ $(document).ready(function()
 
     });
 
-    var fadeOutcounter=4;
-    var fadeOut=0;
-
-    let indexclone;
+   
 
     for (let index = 5; index < 12; index++) {
      
@@ -112,8 +109,6 @@ $(document).ready(function()
 
                 });
             });
-
-            
 
             
 
