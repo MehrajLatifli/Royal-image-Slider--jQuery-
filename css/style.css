@@ -1,0 +1,177 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #23E3C9;
+}
+
+.slider{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+
+    position:relative;
+    animation-name: autoslide;
+    animation-duration: 50s;
+    animation-iteration-count:calc(100);
+
+
+
+}
+
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+  
+img{
+    width: 800px;
+    height: 500px;
+}
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: 505px;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  .manual-btn:hover{
+    background: gray;
+    color: white;
+
+    
+
+    left: -100%;
+    
+  }
+
+  .more_{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+    margin: 0 auto;
+    width: 250px;
+    
+  }
+
+
+  @keyframes autoslide{
+
+    0%{
+        left: 0%;
+    }
+
+    5%{
+        left: -100%;
+    }
+
+    10%{
+        left: -200%;
+    }
+
+    15%{
+        left: -300%;
+    }
+
+    20%{
+        left: -400%;
+    }
+
+    25%{
+        left: -500%;
+    }
+
+    30%{
+        left: -600%;
+    }
+
+    35%{
+        left: -700%;
+    }
+
+    40%{
+        left: -800%;
+    }
+
+    45%{
+        left: -900%;
+    }
+
+    50%{
+        left: -1000%;
+    }
+
+    55%{
+        left: -900%;
+    }
+
+    60%{
+        left: -800%;
+    }
+
+    65%{
+        left: -700%;
+    }
+
+    70%{
+        left: -600%;
+    }
+
+    75%{
+        left: -500%;
+    }
+
+    80%{
+        left: -400%;
+    }
+
+    85%{
+        left: -300%;
+    }
+
+    90%{
+        left:  -200%;
+    }
+
+    95%{
+        left: -100%;
+    }
+
+    100%{
+        left: 0%;
+    }
+
+
+  }
+
+
+
+
